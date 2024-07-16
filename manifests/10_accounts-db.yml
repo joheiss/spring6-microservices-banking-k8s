@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cards-db-deployment
+  name: accounts-db-deployment
   labels:
-    app: cardsdb
+    app: accountsdb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cardsdb
+      app: accountsdb
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: cardsdb
+        app: accountsdb
     spec:
       containers:
-      - name: cardsdb
+      - name: accountsdb
         image: mysql
         ports:
           - containerPort: 3306
@@ -30,7 +30,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: jovisco-configmap
-              key: CARDS_DB
+              key: ACCOUNTS_DB
         - name: MYSQL_ROOT_PASSWORD
           valueFrom: 
             configMapKeyRef:
@@ -40,11 +40,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: cardsdb
+  name: accountsdb
 spec:
   selector:
-    app: cardsdb
+    app: accountsdb
+  type: LoadBalancer
   ports:
     - protocol: TCP
-      port: 3308
+      port: 3306
       targetPort: 3306

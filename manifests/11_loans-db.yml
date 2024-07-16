@@ -44,6 +44,7 @@ metadata:
 spec:
   selector:
     app: loansdb
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 3307

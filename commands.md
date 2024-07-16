@@ -64,3 +64,15 @@ kubectl apply -f secret.yaml
 
 ### save token in secret
 kubectl get secret admin-user -n kubernetes-dashboard -o jsonpath={".data.token"} | base64 -d
+
+### get deployments
+kubectl get deployments
+
+### get services
+kubectl get deployments
+
+### get replica sets
+kubectl get replicasets
+
+### apply configserver manifest
+kubectl apply -f ./manifests/03_configserver.yml
