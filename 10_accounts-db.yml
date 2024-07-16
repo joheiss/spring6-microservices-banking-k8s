@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: accounts-db-deployment
+  labels:
+    app: accountsdb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: accountsdb
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: accountsdb
+    spec:
+      containers:
+      - name: accountsdb
+        image: mysql
+        ports:
+          - containerPort: 3306
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: 1
+        env:
+        - name: MYSQL_DATABASE
+          valueFrom:
+            configMapKeyRef:
+              name: jovisco-configmap
+              key: ACCOUNTS_DB
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom: 
+            configMapKeyRef:
+              name: jovisco-configmap
+              key: MYSQL_ROOT_PASSWORD
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: accountsdb
+spec:
+  selector:
+    app: accountsdb
+  ports:
+    - protocol: TCP
+      port: 3306
+      targetPort: 3306
