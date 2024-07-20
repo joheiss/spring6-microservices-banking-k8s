@@ -536,13 +536,13 @@ primary:
   service:
     ## @param primary.service.type MySQL Primary K8s service type
     ##
-    type: LoadBalancer
+    type: ClusterIP
     ## @param primary.service.ports.mysql MySQL Primary K8s service port
     ## @param primary.service.ports.mysqlx MySQL Primary K8s service mysqlx port
     ##
     ports:
-      mysql: 3308
-      mysqlx: 33080
+      mysql: 3306
+      mysqlx: 33060
     ## @param primary.service.nodePorts.mysql MySQL Primary K8s service node port
     ## @param primary.service.nodePorts.mysqlx MySQL Primary K8s service node port mysqlx
     ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport

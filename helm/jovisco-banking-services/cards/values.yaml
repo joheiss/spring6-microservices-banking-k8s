@@ -28,4 +28,4 @@ otel_enabled: true
 kafka_enabled: false
 
 mysql_enabled: true
-mysqlUrl: "jdbc:mysql:/cardsdb:3308/cardsdb"
+mysqlUrl: "jdbc:mysql:/cardsdb-mysql.default.svc.cluster.local:3308/cardsdb"

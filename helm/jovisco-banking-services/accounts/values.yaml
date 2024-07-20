@@ -28,4 +28,4 @@ otel_enabled: true
 kafka_enabled: true
 
 mysql_enabled: true
-mysqlUrl: "jdbc:mysql://accountsdb:3306/accountsdb"
+mysqlUrl: "jdbc:mysql://accountsdb-mysql.default.svc.cluster.local:3306/accountsdb"

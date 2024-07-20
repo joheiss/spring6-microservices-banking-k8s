@@ -10,5 +10,6 @@ global:
   kafkaBrokerURL: kafka-controller-0.kafka-controller-headless.default.svc.cluster.local:9092
   mysqlRootPassword: root 
   accountsDbUrl: accountsdb-mysql.default.svc.cluster.local:3306
-  loansDbUrl: loansdb-mysql.default.svc.cluster.local:3307
-  cardsDbUrl: cardsdb-mysql.default.svc.cluster.local:3308
+  loansDbUrl: loansdb-mysql.default.svc.cluster.local:3306
+  cardsDbUrl: cardsdb-mysql.default.svc.cluster.local:3306
+  rabbitMqUrl: rabbitmq.default.svc.cluster.local:5672

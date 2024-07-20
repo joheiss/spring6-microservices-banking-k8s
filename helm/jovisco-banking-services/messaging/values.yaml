@@ -24,7 +24,7 @@ profile_enabled: false
 config_enabled: false
 eureka_enabled: false
 resouceserver_enabled: false
-otel_enabled: true
-kafka_enabled: false
+otel_enabled: false
+kafka_enabled: true
 
-mysql_enabled: true
+mysql_enabled: false
