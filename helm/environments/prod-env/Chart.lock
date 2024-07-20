@@ -1,0 +1,36 @@
+dependencies:
+- name: jovisco-banking-common
+  repository: file://../../jovisco-banking-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../jovisco-banking-services/configserver
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../jovisco-banking-services/eurekaserver
+  version: 0.1.0
+- name: accountsdb
+  repository: file://../../jovisco-banking-services/accountsdb
+  version: 0.1.0
+- name: accounts
+  repository: file://../../jovisco-banking-services/accounts
+  version: 0.1.0
+- name: cardsdb
+  repository: file://../../jovisco-banking-services/cardsdb
+  version: 0.1.0
+- name: cards
+  repository: file://../../jovisco-banking-services/cards
+  version: 0.1.0
+- name: loansdb
+  repository: file://../../jovisco-banking-services/loansdb
+  version: 0.1.0
+- name: loans
+  repository: file://../../jovisco-banking-services/loans
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../jovisco-banking-services/gatewayserver
+  version: 0.1.0
+- name: messaging
+  repository: file://../../jovisco-banking-services/messaging
+  version: 0.1.0
+digest: sha256:a5d9fe1c64bd68b63151ab6b6c1ae14222180e701d3cbf1adc3ca848a2466b7c
+generated: "2024-07-19T14:06:53.704451+02:00"

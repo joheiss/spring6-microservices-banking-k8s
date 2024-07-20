@@ -1,0 +1,6 @@
+dependencies:
+- name: jovisco-banking-common
+  repository: file://../../jovisco-banking-common
+  version: 0.1.0
+digest: sha256:fbcdc9cb84a18c47177bbe95e7855dd4fc68e0004793926df207e3fa178e4c9f
+generated: "2024-07-18T12:10:11.922393+02:00"

@@ -1,0 +1,30 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: cardsdb-deployment
+serviceName: cardsdb
+appLabel: cardsdb
+appName: cardsdb
+
+replicaCount: 1
+
+image:
+  repository: mysql
+
+containerPort: 3306
+
+service:
+  type: LoadBalancer
+  port: 3308
+  targetPort: 3306
+
+appname_enabled: true
+profile_enabled: false
+config_enabled: false
+eureka_enabled: false
+resouceserver_enabled: false
+otel_enabled: true
+kafka_enabled: false
+
+mysql_enabled: true
+mysqlDbName: loansdb

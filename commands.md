@@ -76,3 +76,40 @@ kubectl get replicasets
 
 ### apply configserver manifest
 kubectl apply -f ./manifests/03_configserver.yml
+
+##  deploy MySQL with Helm
+### add helm repo
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+### update repo
+helm repo update
+
+### export MYSQL root password
+export MYSQL_ROOT_PASSWORD=root
+
+### install MySQL chart
+helm install --set mysqlRootPassword=$MYSQL_ROOT_PASSWORD --set volumePermissions.enabled=true -n my-database my-mysql bitnami/mysql
+
+### create a helm chart
+helm create <chart-name>
+
+### build dependencies
+helm dependencies build
+
+### install
+helm install <release-name> <chart-name>
+
+### rollback
+helm rollback <release-name> <revision>
+
+### history
+helm history <release-name>
+
+### uninstall
+helm uninstall <release-name>
+
+### render templates
+helm template <release-name> <chart-name>
+
+### list releases
+helm ls

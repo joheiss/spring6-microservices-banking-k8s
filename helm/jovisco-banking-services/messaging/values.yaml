@@ -1,0 +1,30 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: messaging-deployment
+serviceName: messaging
+appLabel: messaging
+appName: messaging
+
+replicaCount: 1
+
+image:
+  repository: joheiss/sb3-messaging
+  tag: v8.2
+
+containerPort: 9010
+
+service:
+  type: ClusterIP
+  port: 9010
+  targetPort: 9010
+
+appname_enabled: true
+profile_enabled: false
+config_enabled: false
+eureka_enabled: false
+resouceserver_enabled: false
+otel_enabled: true
+kafka_enabled: false
+
+mysql_enabled: true
