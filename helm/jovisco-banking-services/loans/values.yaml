@@ -28,4 +28,4 @@ otel_enabled: true
 kafka_enabled: false
 
 mysql_enabled: true
-mysqlUrl: "jdbc:mysql:/loansdb-mysql.default.svc.cluster.local:3307/loansdb"
+mysqlUrl: "jdbc:mysql://loansdb-mysql.default.svc.cluster.local:3307/loansdb"
