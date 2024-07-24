@@ -32,9 +32,9 @@ dependencies:
     version: 0.1.0
     repository: file://../../jovisco-banking-services/configserver
     
-  - name: eurekaserver
-    version: 0.1.0
-    repository: file://../../jovisco-banking-services/eurekaserver
+  # - name: eurekaserver
+  #   version: 0.1.0
+  #   repository: file://../../jovisco-banking-services/eurekaserver
   
   # - name: accountsdb
   #   version: 0.1.0

@@ -32,29 +32,29 @@ dependencies:
     version: 0.1.0
     repository: file://../../jovisco-banking-services/configserver
     
-  - name: eurekaserver
-    version: 0.1.0
-    repository: file://../../jovisco-banking-services/eurekaserver
+  # - name: eurekaserver
+  #   version: 0.1.0
+  #   repository: file://../../jovisco-banking-services/eurekaserver
   
-  - name: accountsdb
-    version: 0.1.0
-    repository: file://../../jovisco-banking-services/accountsdb
+  # - name: accountsdb
+  #   version: 0.1.0
+  #   repository: file://../../jovisco-banking-services/accountsdb
     
   - name: accounts
     version: 0.1.0
     repository: file://../../jovisco-banking-services/accounts
 
-  - name: cardsdb
-    version: 0.1.0
-    repository: file://../../jovisco-banking-services/cardsdb
+  # - name: cardsdb
+  #   version: 0.1.0
+  #   repository: file://../../jovisco-banking-services/cardsdb
 
   - name: cards
     version: 0.1.0
     repository: file://../../jovisco-banking-services/cards
 
-  - name: loansdb
-    version: 0.1.0
-    repository: file://../../jovisco-banking-services/loansdb
+  # - name: loansdb
+  #   version: 0.1.0
+  #   repository: file://../../jovisco-banking-services/loansdb
 
   - name: loans
     version: 0.1.0

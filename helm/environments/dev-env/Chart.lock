@@ -5,9 +5,6 @@ dependencies:
 - name: configserver
   repository: file://../../jovisco-banking-services/configserver
   version: 0.1.0
-- name: eurekaserver
-  repository: file://../../jovisco-banking-services/eurekaserver
-  version: 0.1.0
 - name: accounts
   repository: file://../../jovisco-banking-services/accounts
   version: 0.1.0
@@ -23,5 +20,5 @@ dependencies:
 - name: messaging
   repository: file://../../jovisco-banking-services/messaging
   version: 0.1.0
-digest: sha256:e9dea106d7eb599f2435418afd958f6a8137b4789f38bb4d93bb0ba3735ed032
-generated: "2024-07-20T12:53:35.896127+02:00"
+digest: sha256:8fb31a07d43c462a6da2ab2cbb124b5e1d8df8a43bfde0c721e828859c035735
+generated: "2024-07-22T16:52:53.279212+02:00"
